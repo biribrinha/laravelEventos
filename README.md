@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### 1º: criar um arquivo .env tendo o arquivo .env.example como parêmtro
 ### 2º: Criar um banco dados para o projeto
 Configurar no .env
@@ -55,3 +56,6 @@ https://www.youtube.com/watch?v=svyhZFJnU9M
 https://www.youtube.com/watch?v=MYMujqPvWdQ
 
 https://www.youtube.com/watch?v=8MY0cxdH0OY
+=======
+# PrimeiroProjetoBlade
+>>>>>>> 0078fc31f4638f2bc3bb501bf295f03c35521c97

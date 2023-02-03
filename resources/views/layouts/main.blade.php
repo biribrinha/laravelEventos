@@ -11,8 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 
     <!--CSS bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
+    </script>
 
     <!-- CSS da aplicação -->
     <link rel="stylesheet" href="/css/styles.css">
@@ -21,11 +25,39 @@
 </head>
 
 <body>
+    <header>
+        <div class="containers">
+            <nav class="fixed-top">
+                <div class="container1">
+                    <a href="/" class="logo">
+                        <img src="/img/hdcevents_logo.svg" alt="HDC Events">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="/">Eventos</a>
+                        </li>
+                        <li>
+                            <a href="/events/create">Criar Eventos</a>
+                        </li>
+                        <li>
+                            <a href="/">Entrar</a>
+                        </li>
+                        <li>
+                            <a href="/">Cadastrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
     @yield('content')
+
     <footer>
-        <p>HDC Events &copy; 2020</p>
+        <p>HDC Events &copy; 2023</p>
     </footer>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
-
 </html>
-

@@ -2,9 +2,10 @@
 
 @section('title', 'HDC Events')
 
+
 @section('content')
 
-    <h1>algum titulo</h1>
+    <h1>algum tituio</h1>
         <img src="/img/banner.jpg" alt="Banner">
     @if (10 > 15)
         <p>A condição é true</p>

@@ -5,16 +5,35 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
 a {
     color: #000000;
     text-decoration: none;
     list-style: none;
     display: flex;
     align-items: center;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: #28a745;
 }
 
 .logo img {
-    width: 150px;
+    width: 80px;
+    margin: 40px;
 }
 
 nav {
@@ -32,4 +51,184 @@ li {
     text-decoration: none;
     list-style: none;
     margin: 10px;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0b5a1d;
+}
+
+.msg {
+    background-color: #28a745;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+/* navbar */
+#navbar img {
+    width: 40px;
+}
+
+#navbar {
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+#navbar a {
+    font-size: 14px;
+    color: #757575;
+}
+
+#navbar a:hover {
+    color: #0b5a1d;
+}
+/* Barra de pesquisa */
+
+#search-container input {
+    width: 50%;
+    margin: 5px;
+}
+
+#search-container {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1 {
+    color: #28a745;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#search-container form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Lista de eventos */
+#events-container {
+    padding: 50px;
+}
+
+#events-container h2 {
+    margin-bottom: 10px;
+}
+
+#events-container .subtitle {
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+#cards-container {
+    display: flex;
+}
+
+#events-container .card {
+    flex: 1 1 24%;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0.5%;
+}
+
+#events-container img {
+    max-height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-date {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.card .card-title {
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-participants {
+    font-size: 14px;
+    color: #757575;
+}
+
+/*pagina de eventos*/
+
+#image-container,
+#info-container {
+    margin-top: 30px;
+}
+
+#image-container img {
+    border-radius: 10px;
+}
+
+#info-container h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3,
+#description-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon {
+    font-size: 20px;
+    color: #28a745;
+    margin-right: 5px;
+}
+
+#info-container #event-submit {
+    margin: 20px 0;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: #28a745;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* CRIAR EVENTOS CSS*/
+.eventosTitulo {
+    padding-top: 30px;
+    font-weight: 800;
+    color: #28a745;
 }

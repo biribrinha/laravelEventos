@@ -17,33 +17,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']);
-
-Route::get('/events/create', [EventController::class, 'create']);
-
-Route::get('/events/{id}', [EventController::class, 'show']);
-
+Route::get('/events/create', [EventController::class, 'create'])->middleware('auth'); 
+Route::get('/events/{id}', [EventController::class, 'show']); //mostrar evento por id
 Route::post('/events', [EventController::class, 'store']);
 
 
-
+Route::delete('/events/{id}', [EventController::class, 'destroy']); //deletar evento
 
 Route::get('/contact', function () {
-
     return view('contact');
-
 });
 
-Route::get('/products', function () {
-
-    $busca = request('search');
-
-    return view('products', ["busca" => $busca]);
-});
-
-Route::get('/products_teste/{id?}', function ($id = null) {
-
-    return view('product', ['id' => $id]);
-
-});
-
-
+Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');

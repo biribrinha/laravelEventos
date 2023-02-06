@@ -39,18 +39,49 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li>
-                            <a href="/">Eventos</a>
-                        </li>
-                        <li>
-                            <a href="/events/create">Criar Eventos</a>
-                        </li>
-                        <li>
-                            <a href="/">Entrar</a>
-                        </li>
-                        <li>
-                            <a href="/">Cadastrar</a>
-                        </li>
+
+
+
+                        @auth
+
+                            <li>
+                                <a href="/">Eventos</a>
+                            </li>
+
+                            <li>
+                                <a href="/events/create">Criar eventos</a>
+                            </li>
+
+                            <li>
+                                <a href="/dashboard">Meus eventos</a>
+                            </li>
+
+                            <li>
+                                <form action="/logout" method="POST">
+                                    @csrf
+                                    <a href="/logout"
+                                        onclick="event.preventDefault();
+                                        this.closest('form').submit();
+                                    ">
+                                        Sair
+                                    </a>
+                                </form>
+                            </li>
+                        @endauth
+
+                        @guest
+
+                            <li>
+                                <a href="/">Eventos</a>
+                            </li>
+
+                            <li>
+                                <a href="/login">Entrar</a>
+                            </li>
+                            <li>
+                                <a href="/register">Cadastrar</a>
+                            </li>
+                        @endguest
                     </ul>
                 </div>
             </nav>

@@ -23,10 +23,15 @@
 
 
             <div class="form-group">
-                <label for="title">Evento:</label>
+                <label for="title">Nome do evento:</label>
                 <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento">
             </div>
 
+            <div class="form-group">
+                <label for="title">Data do evento:</label>
+                <input type="date" class="form-control" id="date" name="date">
+            </div>
+            
             <div class="form-group">
                 <label for="title">O que vai acontecer no envento:</label>
                 <textarea name="description" id="description" class="form-control"></textarea>
@@ -37,6 +42,28 @@
                 <input type="text" class="form-control" id="city" name="city"
                     placeholder="Local do evento (cidade)">
             </div>
+
+            <div class="form-group">
+                <label for="title">Adicione itens de infraestrutura</label>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Cadeiras"> Cadeiras
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Palco"> Palco
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Open Food"> Open Food
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Amostras"> Amostras
+                </div>
+
+            </div>
+
+
 
             <div class="form-group">
                 <label for="title">O evento é privado?</label>

@@ -223,6 +223,17 @@ li {
     display: inline-block;
 }
 
+
+/* pagina de editar evento */
+
+.img-preview{
+
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
 /* footer */
 footer {
     text-align: center;

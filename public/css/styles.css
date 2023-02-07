@@ -78,6 +78,15 @@ li {
     padding: 15px;
 }
 
+#info-container .alredy-joined-msg{
+
+    margin: 15px 0;
+    color: #021e07;
+    background-color: #9ef0b1;
+    border: 1px solid #6fde89;
+    padding: 10px;
+    width: 275px;
+}
 /* navbar */
 #navbar img {
     width: 40px;

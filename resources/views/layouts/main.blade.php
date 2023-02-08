@@ -34,7 +34,7 @@
             <nav class="fixed-top-">
                 <div class="container1">
                     <a href="/" class="logo">
-                        <img src="/img/team.png" alt="HDC Events">
+                        <img src="/img/team.png" alt="Laravel Eventos">
                     </a>
                 </div>
                 <div class="menu">
@@ -70,7 +70,6 @@
                         @endauth
 
                         @guest
-
                             <li>
                                 <a href="/">Eventos</a>
                             </li>

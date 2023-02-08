@@ -140,26 +140,35 @@ li {
 
 #events-container h2 {
     margin-bottom: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 45px;
 }
 
 #events-container .subtitle {
     color: #757575;
     margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+
 }
 
 #cards-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #events-container .card {
     flex: 1 1 24%;
-    max-width: 25%;
+    max-width: 20%;
     border-radius: 10px;
     padding: 0;
     margin: 0.5%;
 }
 
 #events-container img {
+
     max-height: 200px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -227,9 +236,22 @@ li {
 
 
 /* dashboard */
+.dashboard-events-container tr th td{
+    text-align: center;
+}
 
+.dashboard-events-container tr {
+    text-align: center;
+} 
 .dashboard-events-container form{
     display: inline-block;
+}
+
+.dashboard-title-container h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 
 
@@ -264,3 +286,6 @@ footer p {
     font-weight: 800;
     color: #28a745;
 }
+
+
+

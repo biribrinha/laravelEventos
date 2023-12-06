@@ -1,3 +1,4 @@
+
 @extends('layouts.main')
 
 @section('title', 'Laravel Eventos')
@@ -48,3 +49,4 @@
 
 
 @endsection
+
